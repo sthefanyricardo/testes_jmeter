@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1632467318983,358,Get Request - /,200,OK,Teste Página Principal 1-5,text,false,can't parse argument number: ,24224,133,6,6,https://gitgithub.andreregino.com.br/,313,0,273
+1632467318276,1071,Get Request - /,200,OK,Teste Página Principal 1-1,text,false,can't parse argument number: ,24224,133,6,6,https://gitgithub.andreregino.com.br/,1024,0,981
+1632467319184,212,Get Request - /,200,OK,Teste Página Principal 1-6,text,false,can't parse argument number: ,24224,133,7,7,https://gitgithub.andreregino.com.br/,181,0,164
+1632467318385,935,Get Request - /,200,OK,Teste Página Principal 1-2,text,false,can't parse argument number: ,24224,133,6,6,https://gitgithub.andreregino.com.br/,894,0,871
+1632467318784,541,Get Request - /,200,OK,Teste Página Principal 1-4,text,false,can't parse argument number: ,24224,133,6,6,https://gitgithub.andreregino.com.br/,495,0,474
+1632467319388,180,Get Request - /,200,OK,Teste Página Principal 1-7,text,false,can't parse argument number: ,24224,133,2,2,https://gitgithub.andreregino.com.br/,161,0,146
+1632467319586,183,Get Request - /,200,OK,Teste Página Principal 1-8,text,false,can't parse argument number: ,24224,133,2,2,https://gitgithub.andreregino.com.br/,163,0,148
+1632467318584,1196,Get Request - /,200,OK,Teste Página Principal 1-3,text,false,can't parse argument number: ,24224,133,1,1,https://gitgithub.andreregino.com.br/,1174,0,1160
+1632467319785,158,Get Request - /,200,OK,Teste Página Principal 1-9,text,false,can't parse argument number: ,24224,133,1,1,https://gitgithub.andreregino.com.br/,139,0,126
+1632467319985,187,Get Request - /,200,OK,Teste Página Principal 1-10,text,false,can't parse argument number: ,24224,133,1,1,https://gitgithub.andreregino.com.br/,165,0,145

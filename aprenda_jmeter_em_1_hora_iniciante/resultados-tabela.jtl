@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Filename,Latency,Encoding,SampleCount,ErrorCount,Hostname,IdleTime,Connect
+1791772152642,123,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-2,text,true,,24317,132,3,3,https://gitgithub.andreregino.com.br/,,114,UTF-8,1,0,jelly-athom-A-R,0,109
+1791772152542,223,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-1,text,true,,24317,132,3,3,https://gitgithub.andreregino.com.br/,,214,UTF-8,1,0,jelly-athom-A-R,0,209
+1791772152742,185,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-3,text,true,,24317,132,2,2,https://gitgithub.andreregino.com.br/,,176,UTF-8,1,0,jelly-athom-A-R,0,165
+1791772152842,182,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-4,text,true,,24317,132,2,2,https://gitgithub.andreregino.com.br/,,163,UTF-8,1,0,jelly-athom-A-R,0,154
+1791772152942,82,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-5,text,true,,24317,132,2,2,https://gitgithub.andreregino.com.br/,,63,UTF-8,1,0,jelly-athom-A-R,0,55
+1791772153041,35,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-6,text,true,,24317,132,1,1,https://gitgithub.andreregino.com.br/,,24,UTF-8,1,0,jelly-athom-A-R,0,17
+1791772153241,39,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-8,text,true,,24317,132,2,2,https://gitgithub.andreregino.com.br/,,33,UTF-8,1,0,jelly-athom-A-R,0,25
+1791772153141,171,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-7,text,true,,24317,132,1,1,https://gitgithub.andreregino.com.br/,,166,UTF-8,1,0,jelly-athom-A-R,0,147
+1791772153341,38,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-9,text,true,,24317,132,1,1,https://gitgithub.andreregino.com.br/,,24,UTF-8,1,0,jelly-athom-A-R,0,18
+1791772153442,34,Get Request - /home/index,200,OK,Teste Pagina Principal - Carga 1-10,text,true,,24317,132,1,1,https://gitgithub.andreregino.com.br/,,26,UTF-8,1,0,jelly-athom-A-R,0,21
