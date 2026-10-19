@@ -1,6 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1792378590821,3334,HTTP Request Google,200,OK,Thread Group 1-1,text,true,,87204,118,4,4,http://www.google.com/,118,0,24
-1792378591821,2712,HTTP Request Google,200,OK,Thread Group 1-2,text,true,,87129,118,3,3,http://www.google.com/,1023,0,665
-1792378592820,2600,HTTP Request Google,200,OK,Thread Group 1-3,text,true,,87657,118,3,3,http://www.google.com/,849,0,302
-1792378593819,2693,HTTP Request Google,200,OK,Thread Group 1-4,text,true,,87247,118,2,2,http://www.google.com/,1273,0,617
-1792378594819,2367,HTTP Request Google,200,OK,Thread Group 1-5,text,true,,87080,118,1,1,http://www.google.com/,1117,0,602
