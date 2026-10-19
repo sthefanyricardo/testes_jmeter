@@ -89,9 +89,10 @@ Para abrir e executar os testes deste repositório, você precisará de:
      ```bash
      java -version
      ```
-2. **Apache JMeter 5.6.x**:
-   - [Download oficial do Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi)
-   - Descompacte o arquivo e adicione o diretório `bin/` nas variáveis de ambiente (`PATH`) do seu sistema operacional.
+2. **Apache JMeter 5.6.3**:
+   - **Caminho no ambiente local:** `C:\apache-jmeter-5.6.3`
+   - **Executável:** `C:\apache-jmeter-5.6.3\bin\jmeter.bat`
+   - *(Opcional)* Para rodar apenas o comando `jmeter` de qualquer pasta pelo terminal, adicione `C:\apache-jmeter-5.6.3\bin` à variável de ambiente `PATH` do Windows.
 
 ---
 
@@ -101,23 +102,40 @@ Para abrir e executar os testes deste repositório, você precisará de:
 
 > ⚠️ **Atenção:** Utilize a interface gráfica **somente** para construir, editar ou validar os scripts. Não execute testes de carga pesada pela interface gráfica.
 
-1. Abra o terminal e execute:
-   ```bash
-   jmeter
+#### Opção A: Executando o arquivo `.bat` diretamente (Padrão no Windows)
+1. Navegue até a pasta:
+   ```text
+   C:\apache-jmeter-5.6.3\bin
    ```
-2. No menu superior, vá em **File > Open** (`Ctrl + O`).
-3. Selecione qualquer arquivo `.jmx` (ex.: `aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx`).
-4. Clique no botão verde de **Play** (ou aperte `Ctrl + R`) para iniciar a execução.
-5. Inspecione os resultados em **View Results Tree** ou **View Results in Table**.
+2. Dê dois cliques no arquivo **`jmeter.bat`** (ou execute `C:\apache-jmeter-5.6.3\bin\jmeter.bat` no CMD/PowerShell).
+3. Uma janela do Prompt de Comando preta abrirá com os avisos e logs da inicialização do JMeter:
+   > ℹ️ **Importante:** Não feche essa janela do terminal preta enquanto estiver usando o JMeter, pois ela sustenta o processo em execução.
+4. Logo em seguida, a interface gráfica do JMeter (5.6.3) será aberta.
+5. No menu superior do JMeter, vá em **File > Open** (`Ctrl + O`).
+6. Navegue até o workspace e selecione o plano de teste desejado:
+   - Exemplo 1: `jmeter_teste_de_performance_de_aplicacoes_web/Cursor - Requisição Google.jmx`
+   - Exemplo 2: `aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx`
+7. Clique no botão verde de **Play** (ou pressione `Ctrl + R`) para iniciar.
+8. Acompanhe os resultados nos ouvintes configurados (**View Results Tree**, **View Results in Table**, etc.).
+
+#### Opção B: Via Terminal (caso `C:\apache-jmeter-5.6.3\bin` esteja no `PATH`)
+Se você adicionou o diretório `bin` ao `PATH`, basta abrir o terminal e digitar:
+```bash
+jmeter
+```
 
 ---
 
-### 2. Modo Linha de Comando (CLI / Non-GUI - Recomendado)
+### 2. Modo Linha de Comando (CLI / Non-GUI - Recomendado para Carga Real)
 
 Para simulações de carga reais e coletas de métricas precisas, execute o JMeter em modo *headless* (sem interface gráfica):
 
 ```bash
+# Se o JMeter estiver no PATH:
 jmeter -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado_execucao.jtl"
+
+# Ou utilizando o caminho absoluto do .bat:
+"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado_execucao.jtl"
 ```
 
 **Parâmetros utilizados:**
@@ -134,11 +152,15 @@ O JMeter pode gerar automaticamente um dashboard interativo completo (com gráfi
 #### A) Executar o teste e gerar o relatório ao mesmo tempo:
 ```bash
 jmeter -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado.jtl" -e -o "dashboard_output"
+# Ou:
+"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado.jtl" -e -o "dashboard_output"
 ```
 
 #### B) Gerar o relatório a partir de um arquivo `.jtl` já existente:
 ```bash
 jmeter -g "aprenda_jmeter_em_1_hora_iniciante/resultados-tabela.jtl" -o "aprenda_jmeter_em_1_hora_iniciante/meu_novo_dashboard"
+# Ou:
+"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -g "aprenda_jmeter_em_1_hora_iniciante/resultados-tabela.jtl" -o "aprenda_jmeter_em_1_hora_iniciante/meu_novo_dashboard"
 ```
 
 Após o término, basta abrir o arquivo `index.html` gerado na pasta de saída em qualquer navegador web.
