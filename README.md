@@ -202,7 +202,7 @@ Os scripts e projetos deste repositório foram construídos e estruturados com b
 
 | Curso / Formação | Instrutor / Instituição | Status / Certificado | Pasta do Projeto |
 | :--- | :--- | :--- | :--- |
-| **Aprenda JMeter em 1 Hora - Iniciante** | Escola de Devs Oficial | 🏆 **Concluído** (11/10/2026)<br>[Visualizar Certificado Udemy](https://www.udemy.com/certificate/UC-a941ad41-86d3-4976-aec2-e86bc68ad3e4/) | [`aprenda_jmeter_em_1_hora_iniciante/`](aprenda_jmeter_em_1_hora_iniciante/) |
+| **[Aprenda JMeter em 1 Hora - Iniciante](https://www.udemy.com/course/aprenda-jmeter-em-1-hora-iniciante/)** | Escola de Devs Oficial | 🏆 **Concluído** (11/10/2026)<br>[Visualizar Certificado Udemy](https://www.udemy.com/certificate/UC-a941ad41-86d3-4976-aec2-e86bc68ad3e4/) | [`aprenda_jmeter_em_1_hora_iniciante/`](aprenda_jmeter_em_1_hora_iniciante/) |
 | **[JMeter: Teste de Performance de Aplicações Web](https://www.udemy.com/course/jmeter-teste-de-performance-de-aplicacoes-web/)** | Udemy | 📖 **Em andamento** / Práticas Contínuas | [`jmeter_teste_de_performance_de_aplicacoes_web/`](jmeter_teste_de_performance_de_aplicacoes_web/) |
 
 ---
