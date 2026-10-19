@@ -11,6 +11,22 @@ Esta aplicação pertence originalmente ao repositório do livro **Pro Apache JM
 
 ---
 
+## ⚠️ Pré-requisitos e Compatibilidade (Java JDK 8)
+
+> [!IMPORTANT]
+> Esta aplicação **funciona exclusivamente com o Java JDK 8**. Versões mais recentes do Java (Java 11, 17, 21+) causam erros de incompatibilidade no Jetty Runner e no framework da aplicação (como exceções de leitura do pacote `.war` e erros de carregamento de classes).
+
+- **Versão requerida:** Java SE Development Kit 8 (JDK 1.8).
+- **JDK utilizado / recomendado (Windows):** [Eclipse Adoptium Temurin JDK 8](https://adoptium.net/temurin/releases/?version=8).
+  - Como configurado no script [startDt.bat](startDt.bat), a chamada utiliza o executável instalado no diretório do usuário:
+    ```cmd
+    "%LOCALAPPDATA%\Programs\Eclipse Adoptium\jdk-8.0.504.1-hotspot\bin\java.exe" -jar jetty-runner.jar dt-1.0.war
+    ```
+  - *Caminho padrão de instalação:*
+    `C:\Users\<usuario>\AppData\Local\Programs\Eclipse Adoptium\jdk-8.0.504.1-hotspot\bin`
+
+---
+
 ## 🚀 Como Executar
 
 Para iniciar a aplicação localmente:
