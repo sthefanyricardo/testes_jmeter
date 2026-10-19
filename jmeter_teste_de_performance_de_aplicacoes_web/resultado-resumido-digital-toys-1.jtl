@@ -1,0 +1,25 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1792387628142,6,HTTP Request - Produto 1,200,OK,Thread Group 1-1,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=1,6,0,2
+1792387628148,4,HTTP Request -Produto 2,200,OK,Thread Group 1-1,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=2,4,0,0
+1792387628152,3,HTTP Request -Produto 3,200,OK,Thread Group 1-1,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=3,3,0,0
+1792387628156,2,HTTP Request - Produto 1,200,OK,Thread Group 1-1,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=1,2,0,0
+1792387628159,2,HTTP Request -Produto 2,200,OK,Thread Group 1-1,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=2,2,0,0
+1792387628162,2,HTTP Request -Produto 3,200,OK,Thread Group 1-1,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=3,2,0,0
+1792387629142,4,HTTP Request - Produto 1,200,OK,Thread Group 1-2,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=1,4,0,1
+1792387629147,3,HTTP Request -Produto 2,200,OK,Thread Group 1-2,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=2,3,0,0
+1792387629150,3,HTTP Request -Produto 3,200,OK,Thread Group 1-2,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=3,3,0,0
+1792387629153,2,HTTP Request - Produto 1,200,OK,Thread Group 1-2,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=1,2,0,0
+1792387629155,2,HTTP Request -Produto 2,200,OK,Thread Group 1-2,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=2,2,0,0
+1792387629157,2,HTTP Request -Produto 3,200,OK,Thread Group 1-2,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=3,2,0,0
+1792387630141,5,HTTP Request - Produto 1,200,OK,Thread Group 1-3,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=1,5,0,1
+1792387630146,3,HTTP Request -Produto 2,200,OK,Thread Group 1-3,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=2,3,0,0
+1792387630150,2,HTTP Request -Produto 3,200,OK,Thread Group 1-3,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=3,2,0,0
+1792387630152,2,HTTP Request - Produto 1,200,OK,Thread Group 1-3,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=1,2,0,0
+1792387630154,2,HTTP Request -Produto 2,200,OK,Thread Group 1-3,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=2,2,0,0
+1792387630156,2,HTTP Request -Produto 3,200,OK,Thread Group 1-3,text,true,,5853,144,1,1,http://localhost:8080/product/detail?productId=3,2,0,0
+1792387631142,5,HTTP Request - Produto 1,200,OK,Thread Group 1-4,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=1,5,0,0
+1792387631147,3,HTTP Request -Produto 2,200,OK,Thread Group 1-4,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=2,3,0,0
+1792387631150,2,HTTP Request -Produto 3,200,OK,Thread Group 1-4,text,true,,5856,144,1,1,http://localhost:8080/product/detail?productId=3,2,0,0
+1792387631152,2,HTTP Request - Produto 1,200,OK,Thread Group 1-4,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=1,2,0,0
+1792387631154,2,HTTP Request -Produto 2,200,OK,Thread Group 1-4,text,true,,5855,144,1,1,http://localhost:8080/product/detail?productId=2,2,0,0
+1792387631156,2,HTTP Request -Produto 3,200,OK,Thread Group 1-4,text,true,,5854,144,1,1,http://localhost:8080/product/detail?productId=3,2,0,0
