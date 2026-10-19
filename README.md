@@ -16,6 +16,8 @@ Repositório dedicado ao estudo, desenvolvimento e execução de testes de desem
   - [3. Geração de Relatórios HTML (Dashboard)](#3-geração-de-relatórios-html-dashboard)
 - [Boas Práticas em Testes com JMeter](#-boas-práticas-em-testes-com-jmeter)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Cursos e Certificações](#-cursos-e-certificações)
+- [Autoria](#-autoria)
 
 ---
 
@@ -89,7 +91,10 @@ Para abrir e executar os testes deste repositório, você precisará de:
      ```bash
      java -version
      ```
-2. **Apache JMeter 5.6.3**:
+     
+2. **Apache JMeter 5.6.x**:
+   - [Download oficial do Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi)
+   - Descompacte o arquivo e adicione o diretório `bin/` nas variáveis de ambiente (`PATH`) do seu sistema operacional.
    - **Caminho no ambiente local:** `C:\apache-jmeter-5.6.3`
    - **Executável:** `C:\apache-jmeter-5.6.3\bin\jmeter.bat`
    - *(Opcional)* Para rodar apenas o comando `jmeter` de qualquer pasta pelo terminal, adicione `C:\apache-jmeter-5.6.3\bin` à variável de ambiente `PATH` do Windows.
@@ -190,4 +195,17 @@ Após o término, basta abrir o arquivo `index.html` gerado na pasta de saída e
 
 ---
 
-Desenvolvido para fins de estudo e aprimoramento em **Engenharia de Qualidade de Software (QA)** e **Testes de Desempenho**.
+## 🎓 Cursos e Certificações
+
+Os scripts e projetos deste repositório foram construídos e estruturados com base nos treinamentos:
+
+| Curso / Formação | Instrutor / Instituição | Status / Certificado | Pasta do Projeto |
+| :--- | :--- | :--- | :--- |
+| **Aprenda JMeter em 1 Hora - Iniciante** | Escola de Devs Oficial | 🏆 **Concluído** (11/10/2026)<br>[Visualizar Certificado Udemy](https://www.udemy.com/certificate/UC-a941ad41-86d3-4976-aec2-e86bc68ad3e4/) | [`aprenda_jmeter_em_1_hora_iniciante/`](aprenda_jmeter_em_1_hora_iniciante/) |
+| **[JMeter: Teste de Performance de Aplicações Web](https://www.udemy.com/course/jmeter-teste-de-performance-de-aplicacoes-web/)** | Udemy | 📖 **Em andamento** / Práticas Contínuas | [`jmeter_teste_de_performance_de_aplicacoes_web/`](jmeter_teste_de_performance_de_aplicacoes_web/) |
+
+---
+
+## 👩‍💻 Autoria
+
+Desenvolvido por **Sthefany Albuquerque Ricardo** para fins de estudo, prática e aprimoramento profissional em **Engenharia de Qualidade de Software (QA)** e **Testes de Desempenho / Carga**.
