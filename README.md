@@ -93,7 +93,7 @@ Para abrir e executar os testes deste repositório, você precisará de:
      ```
 
 2. **Apache JMeter 5.6.X** ([Download oficial](https://jmeter.apache.org/download_jmeter.cgi)):
-   - **Versão:** `5.6.3`
+   - **Versão utilizada:** `5.6.3`
    - **Caminho de instalação:** `C:\apache-jmeter-5.6.3`
    - **Executável GUI:** `C:\apache-jmeter-5.6.3\bin\jmeter.bat`
    - **Variável de Ambiente (Opcional):**
