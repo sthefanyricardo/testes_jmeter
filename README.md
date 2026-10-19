@@ -53,9 +53,16 @@ testes_jmeter/
 │   └── testes_curso_rapido_jmeter.jmx     # Plano de teste principal do curso para iniciantes
 │
 ├── jmeter_teste_de_performance_de_aplicacoes_web/
-│   └── Cursor - Requisição Google.jmx     # Plano com requisição HTTP simples e amostradores de resultados
+│   ├── Cursor - Requisição Google.jmx         # Plano com requisição HTTP simples e amostradores de resultados
+│   ├── Desafio - Comparação Google vs Yahoo.jmx # Desafio: 200 usuários comparando busca entre Google e Yahoo (90% Line)
+│   ├── Digital Toys 1.jmx                     # Plano de teste de carga na aplicação local Digital Toys
+│   ├── digital-toys-web-application/          # Aplicação web embutida (War, Jetty Runner, BD H2)
+│   ├── resultado-arvore-digital-toys-1.jtl    # Resultados do teste Digital Toys (View Results Tree)
+│   ├── resultado-tabela-digital-toys-1.jtl    # Resultados do teste Digital Toys (View Results in Table)
+│   ├── resultados-arvore-requisicao-google.jtl # Resultados do teste Google (View Results Tree)
+│   └── resultados-tabela-requisicao-google.jtl # Resultados do teste Google (View Results in Table)
 │
-└── README.md                              # Documentação geral do repositório
+└── README.md                                  # Documentação geral do repositório
 ```
 
 ---
