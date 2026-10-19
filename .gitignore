@@ -4,3 +4,7 @@
 *.h2
 *.h2.db
 *.db.old
+
+# JMeter logs
+jmeter.log
+*.log
