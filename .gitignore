@@ -1,3 +1,6 @@
 # H2 Database
 *.lock.db
 *.trace.db
+*.h2
+*.h2.db
+*.db.old
