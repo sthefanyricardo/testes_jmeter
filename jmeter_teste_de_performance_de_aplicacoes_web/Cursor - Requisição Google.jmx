@@ -64,7 +64,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Users\sthef\OneDrive\Desktop\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\resultados-arvore.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
@@ -101,7 +101,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Users\sthef\OneDrive\Desktop\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\resultados-tabela.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
