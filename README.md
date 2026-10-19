@@ -91,13 +91,14 @@ Para abrir e executar os testes deste repositório, você precisará de:
      ```bash
      java -version
      ```
-     
-2. **Apache JMeter 5.6.x**:
-   - [Download oficial do Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi)
-   - Descompacte o arquivo e adicione o diretório `bin/` nas variáveis de ambiente (`PATH`) do seu sistema operacional.
-   - **Caminho no ambiente local:** `C:\apache-jmeter-5.6.3`
-   - **Executável:** `C:\apache-jmeter-5.6.3\bin\jmeter.bat`
-   - *(Opcional)* Para rodar apenas o comando `jmeter` de qualquer pasta pelo terminal, adicione `C:\apache-jmeter-5.6.3\bin` à variável de ambiente `PATH` do Windows.
+
+2. **Apache JMeter 5.6.X** ([Download oficial](https://jmeter.apache.org/download_jmeter.cgi)):
+   - **Versão:** `5.6.3`
+   - **Caminho de instalação:** `C:\apache-jmeter-5.6.3`
+   - **Executável GUI:** `C:\apache-jmeter-5.6.3\bin\jmeter.bat`
+   - **Variável de Ambiente (Opcional):**
+     - `JMETER_HOME`: `C:\apache-jmeter-5.6.3`
+     - `PATH`: `%JMETER_HOME%\bin` *(permite rodar o comando `jmeter` diretamente no terminal)*
 
 ---
 
