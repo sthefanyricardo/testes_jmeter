@@ -79,10 +79,16 @@ Durante as práticas implementadas neste repositório, foram explorados os princ
 
 Para abrir e executar os testes deste repositório, você precisará de:
 
-1. **Java JDK 8 ou superior** (recomendado Java 11 ou 17):
-   ```bash
-   java -version
-   ```
+1. **Java JDK 8 ou superior** (Ambiente local configurado com **[Azul Zulu OpenJDK 25 LTS](https://www.azul.com/downloads/?os=windows&package=jdk#zulu)**):
+   - **Versão:** Azul Zulu OpenJDK `25.0.4.1` (x64)
+   - **Caminho de instalação:** `C:\Program Files\Java\zulu25.36.205-ca-jdk25.0.4.1-win_x64`
+   - **Variável de Ambiente:**
+     - `JAVA_HOME`: `C:\Program Files\Java\zulu25.36.205-ca-jdk25.0.4.1-win_x64`
+     - `PATH`: `%JAVA_HOME%\bin`
+   - Verificação no terminal:
+     ```bash
+     java -version
+     ```
 2. **Apache JMeter 5.6.x**:
    - [Download oficial do Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi)
    - Descompacte o arquivo e adicione o diretório `bin/` nas variáveis de ambiente (`PATH`) do seu sistema operacional.
@@ -155,7 +161,7 @@ Após o término, basta abrir o arquivo `index.html` gerado na pasta de saída e
 ## 🛠️ Tecnologias Utilizadas
 
 - **Apache JMeter 5.6.3**
-- **Java (JDK)**
+- **Java JDK (Azul Zulu OpenJDK 25.0.4.1 LTS)**
 - **HTML5 & CSS3** (para relatórios do Dashboard SB Admin 2)
 - **JSON** (para armazenamento e exportação de estatísticas)
 - **Git** para versionamento de código e planos de teste
