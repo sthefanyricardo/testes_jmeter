@@ -21,7 +21,7 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - Tela de Login">
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
-          <stringProp name="HTTPSampler.path">user/signOut</stringProp>
+          <stringProp name="HTTPSampler.path">user/signIn</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -34,7 +34,7 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - Login Form">
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
-          <stringProp name="HTTPSampler.path">user/signOut</stringProp>
+          <stringProp name="HTTPSampler.path">user/signIn</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -164,6 +164,12 @@
           <stringProp name="variableNames">usuario,senha</stringProp>
           <stringProp name="TestPlan.comments">Arquivo de extensão .csv com os dados de login da aplicação web digital toys</stringProp>
         </CSVDataSet>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        </CookieManager>
         <hashTree/>
       </hashTree>
     </hashTree>
