@@ -2,3 +2,5 @@
 jmeter.log
 *.log
 *.jtl
+
+results/
