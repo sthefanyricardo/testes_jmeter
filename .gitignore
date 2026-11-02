@@ -5,10 +5,13 @@
 *.h2.db
 *.db.old
 
-# JMeter logs
+# JMeter logs e resultados brutos
 jmeter.log
 *.log
 *.jtl
 
-# JMeter results    
-results/
+# Ignora o conteúdo gerado em results/ e reports/, mas mantém as pastas no GitHub
+**/results/*
+!**/results/.gitkeep
+**/reports/*
+!**/reports/.gitkeep
