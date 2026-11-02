@@ -11,6 +11,7 @@ Repositório dedicado ao estudo, desenvolvimento e execução de testes de desem
 - [Conceitos Praticados](#-conceitos-praticados)
 - [Pré-requisitos](#-pré-requisitos)
 - [Como Executar os Testes](#-como-executar-os-testes)
+  - [0. Iniciando a Aplicação Alvo Local (Digital Toys)](#0-iniciando-a-aplicação-alvo-local-digital-toys)
   - [1. Modo Gráfico (GUI - Criação e Depuração)](#1-modo-gráfico-gui---criação-e-depuração)
   - [2. Modo Linha de Comando (CLI / Non-GUI - Recomendado)](#2-modo-linha-de-comando-cli--non-gui---recomendado)
   - [3. Geração de Relatórios HTML (Dashboard)](#3-geração-de-relatórios-html-dashboard)
@@ -31,6 +32,8 @@ Os cenários cobrem desde requisições HTTP básicas até configurações avan�
 
 ## 📂 Estrutura do Repositório
 
+Os projetos seguem o padrão de mercado para engenharia de performance, separando **planos de teste (`plans/`)**, **massa de dados (`data/`)**, **logs brutos de execução (`results/`)** e **relatórios visuais (`reports/`)**:
+
 ```text
 testes_jmeter/
 ├── aprenda_jmeter_em_1_hora_iniciante/
@@ -38,42 +41,33 @@ testes_jmeter/
 │   │   └── testes_curso_rapido_jmeter.jmx             # Plano de teste principal do curso para iniciantes
 │   ├── data/                                          # Massa de dados (.csv)
 │   │   └── gitgithub.csv                              # Massa de dados para testes parametrizados (Data-Driven)
-│   ├── results/                                       # Logs brutos de resultados (.jtl / .txt)
-│   │   ├── report-html.txt                            # Saída da asserção de estrutura HTML (HTML Assertion)
-│   │   ├── resultados-arvore.jtl                      # Log de resultados gerado pelo View Results Tree
-│   │   ├── resultados-graph.jtl                       # Log de resultados gerado pelo Graph Results
-│   │   ├── resultados-report.jtl                      # Log de resultados gerado pelo Summary Report
-│   │   └── resultados-tabela.jtl                      # Log de resultados gerado pelo View Results in Table
-│   ├── reports/                                       # Dashboards HTML gerados
-│   │   ├── dashboard_report_table/                    # Relatório HTML gerado para a visualização em tabela
-│   │   └── dashboards_report_tree/                    # Relatório HTML gerado para a visualização em árvore
+│   ├── results/                                       # Logs brutos de execução (.jtl / .txt) — ignorados no Git
+│   │   └── .gitkeep                                   # Mantém a estrutura da pasta no repositório
+│   ├── reports/                                       # Dashboards HTML gerados (-e -o) — ignorados no Git
+│   │   └── .gitkeep                                   # Mantém a estrutura da pasta no repositório
 │   └── Materiais Curso JMeter/                        # Arquivos originais de apoio do curso
 │
 ├── jmeter_teste_de_performance_de_aplicacoes_web/
 │   ├── plans/                                         # Planos de teste (.jmx)
-│   │   ├── aula_parametrizacao.jmx                    # Teste parametrizado de login (CSV Data Set Config)
-│   │   ├── aula_temporizadores.jmx                    # Prática com Constant e Uniform Random Timers
+│   │   ├── aula_parametrizacao.jmx                    # Fluxo de Login/Logout parametrizado (CSV + Cookie Manager)
+│   │   ├── aula_temporizadores.jmx                    # Simulação de Think Time (Constant & Uniform Random Timer)
 │   │   ├── desafio_comparacao_google_vs_yahoo.jmx     # Desafio: 200 usuários comparando Google e Yahoo (90% Line)
 │   │   ├── digital_toys_1.jmx                         # Plano de teste de carga na aplicação local Digital Toys
 │   │   └── exemplo_1_requisicao_google.jmx            # Plano com requisição HTTP simples e amostradores
 │   ├── data/                                          # Massa de dados (.csv)
 │   │   └── dados_login_digital_toys.csv               # Credenciais para login parametrizado na Digital Toys
-│   ├── results/                                       # Logs brutos de resultados (.jtl)
-│   │   ├── resultado-agregado-desafio-google-yahoo.jtl
-│   │   ├── resultado-agregado-digital-toys-1.jtl
-│   │   ├── resultado-arvore-aula-parametrizacao.jtl
-│   │   ├── resultado-arvore-digital-toys-1.jtl
-│   │   ├── resultado-desafio-google-yahoo.jtl
-│   │   ├── resultado-resumido-digital-toys-1.jtl
-│   │   ├── resultado-tabela-aula-parametrizacao.jtl
-│   │   ├── resultado-tabela-digital-toys-1.jtl
-│   │   ├── resultados-arvore-requisicao-google.jtl
-│   │   └── resultados-tabela-requisicao-google.jtl
-│   ├── reports/                                       # Dashboards HTML gerados
-│   │   └── dashboard_desafio/
-│   └── digital-toys-web-application/                  # Aplicação web alvo local (War, Jetty Runner, BD H2)
+│   ├── results/                                       # Logs brutos de execução (.jtl) — ignorados no Git
+│   │   └── .gitkeep                                   # Mantém a estrutura da pasta no repositório
+│   ├── reports/                                       # Dashboards HTML gerados (-e -o) — ignorados no Git
+│   │   └── .gitkeep                                   # Mantém a estrutura da pasta no repositório
+│   └── digital-toys-web-application/                  # Aplicação web alvo local (WAR, Jetty Runner, BD H2)
+│       ├── dt-1.0.war                                 # Pacote da aplicação web Digital Toys
+│       ├── jetty-runner.jar                           # Servidor Jetty embarcado
+│       ├── startDt.bat                                # Script de inicialização no Windows (porta 8080)
+│       └── startDt.sh                                 # Script de inicialização no Linux/macOS
 │
-└── README.md                                  # Documentação geral do repositório
+├── .gitignore                                         # Regras de exclusão (bancos H2, logs .jtl e relatórios gerados)
+└── README.md                                          # Documentação geral do repositório
 ```
 
 ---
@@ -84,14 +78,18 @@ Durante as práticas implementadas neste repositório, foram explorados os princ
 
 | Componente | Função |
 | :--- | :--- |
-| **Thread Group** | Simulação da quantidade de usuários virtuais concorrentes, tempo de subida (*ramp-up*) e ciclos de iteração (*loops*). |
-| **HTTP Request Sampler** | Envio de requisições HTTP/HTTPS (GET, POST, etc.) parametrizando domínios, caminhos e portas. |
-| **Response Assertion** | Validação automatizada de regras, como validação de código de status HTTP (`200 OK`) e conteúdos esperados. |
+| **Thread Group** | Simulação da quantidade de usuários virtuais concorrentes, tempo de subida (*ramp-up*), duração e ciclos de iteração (*loops*). |
+| **HTTP Request Sampler** | Envio de requisições HTTP/HTTPS (`GET`, `POST`, etc.) parametrizando domínios, caminhos, portas e *payloads*. |
+| **HTTP Request Defaults** | Centralização de configurações padrão (protocolo, servidor, porta e *encoding*) para evitar repetição nos *Samplers*. |
+| **HTTP Cookie Manager** | Armazenamento e envio automático de *cookies* de sessão entre requisições (essencial em fluxos autenticados de Login/Logout). |
+| **User Defined Variables** | Definição de variáveis globais no Plano de Teste (ex.: `${servidor}`, `${porta}`) para fácil manutenção de ambientes. |
+| **CSV Data Set Config** | Execução de testes orientados a dados (*Data-Driven Testing*), lendo massas dinâmicas de usuários e senhas de arquivos `.csv`. |
+| **Timers (Constant / Uniform Random)** | Simulação de *Think Time* (tempo de reflexão do usuário real) aplicando pausas fixas ou aleatórias entre requisições. |
+| **Response Assertion** | Validação automatizada de regras de negócio, como código de status HTTP (`200 OK`) e conteúdos esperados na resposta. |
 | **Duration Assertion** | Verificação de conformidade de SLA (ex.: requisição deve responder em menos de $X$ ms). |
-| **HTML Assertion** | Verificação da integridade do código HTML retornado na resposta, apontando erros e avisos de sintaxe. |
-| **CSV Data Set Config** | Execução de testes baseados em dados (*Data-Driven Testing*), lendo listas dinâmicas de parâmetros de arquivos `.csv`. |
-| **HTTP(S) Test Script Recorder** | Captura e gravação de requisições de navegação do usuário através de proxy intermediário. |
-| **Listeners & Relatórios** | Coleta de métricas como Throughput, Latência, Tempo de Conexão, Percentis (90%, 95%, 99%) e Códigos de Erro. |
+| **HTML Assertion** | Verificação da integridade sintática do código HTML retornado na resposta. |
+| **HTTP(S) Test Script Recorder** | Captura e gravação de fluxos de navegação reais do usuário através de proxy intermediário. |
+| **Listeners & Relatórios** | Coleta de métricas como *Throughput*, Latência, Tempo de Conexão, Percentis (90%, 95%, 99%), APDEX e Taxa de Erros. |
 
 ---
 
@@ -121,6 +119,19 @@ Para abrir e executar os testes deste repositório, você precisará de:
 ---
 
 ## 🚀 Como Executar os Testes
+
+### 0. Iniciando a Aplicação Alvo Local (Digital Toys)
+
+Os planos de teste `digital_toys_1.jmx`, `aula_parametrizacao.jmx` e `aula_temporizadores.jmx` executam contra a aplicação local **Digital Toys** (`http://localhost:8080`). Para iniciá-la antes dos testes:
+
+```powershell
+cd jmeter_teste_de_performance_de_aplicacoes_web/digital-toys-web-application
+.\startDt.bat
+```
+
+> ℹ️ O servidor Jetty será iniciado na porta `8080`. Mantenha esse terminal aberto enquanto executa os testes no JMeter.
+
+---
 
 ### 1. Modo Gráfico (GUI - Criação e Depuração)
 
@@ -201,6 +212,7 @@ Após o término, basta abrir o arquivo `index.html` gerado na pasta de saída e
    ```
 4. **Use asserções com sabedoria**: Asserções de HTML e respostas completas adicionam sobrecarga de CPU na máquina geradora de carga. Ative-as principalmente na fase de validação e testes funcionais.
 5. **Parametrize dados sensíveis**: Utilize variáveis definidas pelo usuário (`User Defined Variables`) ou arquivos CSV para credenciais, URLs base e portas, facilitando a troca entre ambientes (Dev, Homologação, Produção).
+6. **Mantenha o repositório Git limpo**: Versione apenas planos de teste (`plans/*.jmx`) e massas de dados (`data/*.csv`). Artefatos pesados gerados a cada bateria (`results/*.jtl` e dashboards em `reports/`) devem ser ignorados via `.gitignore`, mantendo apenas a estrutura das pastas com arquivos `.gitkeep`.
 
 ---
 
