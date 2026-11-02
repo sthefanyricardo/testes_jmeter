@@ -1,7 +1,0 @@
-# JMeter logs
-jmeter.log
-*.log
-*.jtl
-
-# JMeter results    
-results/
