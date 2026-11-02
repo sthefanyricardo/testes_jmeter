@@ -1,0 +1,46 @@
+line 7 column 5 - Warning: <meta> lacks "content" attribute
+line 15 column 90 - Warning: Warning: unescaped & or unknown entity "&display"
+line 15 column 90 - Warning: <link> lacks "type" attribute
+line 18 column 5 - Warning: <script> lacks "type" attribute
+line 21 column 5 - Warning: <link> lacks "type" attribute
+line 23 column 9 - Warning: <script> lacks "type" attribute
+line 35 column 5 - Error: <header> is not recognized!
+line 35 column 5 - Warning: discarding unexpected <header>
+line 40 column 9 - Warning: trimming empty <div>
+line 42 column 1 - Warning: discarding unexpected </header>
+line 44 column 5 - Error: <section> is not recognized!
+line 44 column 5 - Warning: discarding unexpected <section>
+line 133 column 1 - Warning: discarding unexpected </section>
+line 136 column 5 - Error: <section> is not recognized!
+line 136 column 5 - Warning: discarding unexpected <section>
+line 141 column 5 - Warning: discarding unexpected </section>
+line 144 column 6 - Error: <section> is not recognized!
+line 144 column 6 - Warning: discarding unexpected <section>
+line 149 column 5 - Warning: discarding unexpected </section>
+line 152 column 5 - Error: <section> is not recognized!
+line 152 column 5 - Warning: discarding unexpected <section>
+line 160 column 102 - Warning: trimming empty <i>
+line 160 column 106 - Warning: trimming empty <div>
+line 171 column 102 - Warning: trimming empty <i>
+line 171 column 106 - Warning: trimming empty <div>
+line 182 column 100 - Warning: trimming empty <i>
+line 182 column 104 - Warning: trimming empty <div>
+line 193 column 101 - Warning: trimming empty <i>
+line 193 column 105 - Warning: trimming empty <div>
+line 205 column 98 - Warning: trimming empty <i>
+line 205 column 102 - Warning: trimming empty <div>
+line 217 column 107 - Warning: trimming empty <i>
+line 217 column 111 - Warning: trimming empty <div>
+line 227 column 1 - Warning: discarding unexpected </section>
+line 229 column 5 - Error: <section> is not recognized!
+line 229 column 5 - Warning: discarding unexpected <section>
+line 242 column 97 - Warning: trimming empty <i>
+line 243 column 97 - Warning: trimming empty <i>
+line 244 column 97 - Warning: trimming empty <i>
+line 245 column 97 - Warning: trimming empty <i>
+line 254 column 1 - Warning: discarding unexpected </section>
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+75 warnings, 12 errors were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.
