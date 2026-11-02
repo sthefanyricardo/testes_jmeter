@@ -53,14 +53,28 @@ testes_jmeter/
 │   └── testes_curso_rapido_jmeter.jmx     # Plano de teste principal do curso para iniciantes
 │
 ├── jmeter_teste_de_performance_de_aplicacoes_web/
-│   ├── Cursor - Requisição Google.jmx         # Plano com requisição HTTP simples e amostradores de resultados
-│   ├── Desafio - Comparação Google vs Yahoo.jmx # Desafio: 200 usuários comparando busca entre Google e Yahoo (90% Line)
-│   ├── Digital Toys 1.jmx                     # Plano de teste de carga na aplicação local Digital Toys
-│   ├── digital-toys-web-application/          # Aplicação web embutida (War, Jetty Runner, BD H2)
-│   ├── resultado-arvore-digital-toys-1.jtl    # Resultados do teste Digital Toys (View Results Tree)
-│   ├── resultado-tabela-digital-toys-1.jtl    # Resultados do teste Digital Toys (View Results in Table)
-│   ├── resultados-arvore-requisicao-google.jtl # Resultados do teste Google (View Results Tree)
-│   └── resultados-tabela-requisicao-google.jtl # Resultados do teste Google (View Results in Table)
+│   ├── plans/                                         # Planos de teste (.jmx)
+│   │   ├── aula_parametrizacao.jmx                    # Teste parametrizado de login (CSV Data Set Config)
+│   │   ├── aula_temporizadores.jmx                    # Prática com Constant e Uniform Random Timers
+│   │   ├── desafio_comparacao_google_vs_yahoo.jmx     # Desafio: 200 usuários comparando Google e Yahoo (90% Line)
+│   │   ├── digital_toys_1.jmx                         # Plano de teste de carga na aplicação local Digital Toys
+│   │   └── exemplo_1_requisicao_google.jmx            # Plano com requisição HTTP simples e amostradores
+│   ├── data/                                          # Massa de dados (.csv)
+│   │   └── dados_login_digital_toys.csv               # Credenciais para login parametrizado na Digital Toys
+│   ├── results/                                       # Logs brutos de resultados (.jtl)
+│   │   ├── resultado-agregado-desafio-google-yahoo.jtl
+│   │   ├── resultado-agregado-digital-toys-1.jtl
+│   │   ├── resultado-arvore-aula-parametrizacao.jtl
+│   │   ├── resultado-arvore-digital-toys-1.jtl
+│   │   ├── resultado-desafio-google-yahoo.jtl
+│   │   ├── resultado-resumido-digital-toys-1.jtl
+│   │   ├── resultado-tabela-aula-parametrizacao.jtl
+│   │   ├── resultado-tabela-digital-toys-1.jtl
+│   │   ├── resultados-arvore-requisicao-google.jtl
+│   │   └── resultados-tabela-requisicao-google.jtl
+│   ├── reports/                                       # Dashboards HTML gerados
+│   │   └── dashboard_desafio/
+│   └── digital-toys-web-application/                  # Aplicação web alvo local (War, Jetty Runner, BD H2)
 │
 └── README.md                                  # Documentação geral do repositório
 ```
@@ -126,7 +140,7 @@ Para abrir e executar os testes deste repositório, você precisará de:
 4. Logo em seguida, a interface gráfica do JMeter (5.6.3) será aberta.
 5. No menu superior do JMeter, vá em **File > Open** (`Ctrl + O`).
 6. Navegue até o workspace e selecione o plano de teste desejado:
-   - Exemplo 1: `jmeter_teste_de_performance_de_aplicacoes_web/Cursor - Requisição Google.jmx`
+   - Exemplo 1: `jmeter_teste_de_performance_de_aplicacoes_web/plans/exemplo_1_requisicao_google.jmx`
    - Exemplo 2: `aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx`
 7. Clique no botão verde de **Play** (ou pressione `Ctrl + R`) para iniciar.
 8. Acompanhe os resultados nos ouvintes configurados (**View Results Tree**, **View Results in Table**, etc.).
