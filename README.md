@@ -264,10 +264,10 @@ Os scripts e projetos deste repositório foram construídos e estruturados com b
 | Curso / Formação | Instrutor / Instituição | Status / Certificado | Pasta do Projeto |
 | :--- | :--- | :--- | :--- |
 | **[Aprenda JMeter em 1 Hora - Iniciante](https://www.udemy.com/course/aprenda-jmeter-em-1-hora-iniciante/)** | Escola de Devs Oficial - Udemy | 🏆 **Concluído** (11/10/2026)<br>[Visualizar Certificado Udemy](https://www.udemy.com/certificate/UC-a941ad41-86d3-4976-aec2-e86bc68ad3e4/) | [`aprenda_jmeter_em_1_hora_iniciante/`](aprenda_jmeter_em_1_hora_iniciante/) |
-| **[JMeter: Teste de Performance de Aplicações Web](https://www.udemy.com/course/jmeter-teste-de-performance-de-aplicacoes-web/)** | Leonardo Baraúna - Udemy | 📖 **Em andamento** / Práticas Contínuas | [`[jmeter_teste_de_performance_de_aplicacoes_web/](https://www.udemy.com/certificate/UC-26a2a547-b72e-419c-9167-676510f2c1f3/)`](jmeter_teste_de_performance_de_aplicacoes_web/) |
+| **[JMeter: Teste de Performance de Aplicações Web](https://www.udemy.com/course/jmeter-teste-de-performance-de-aplicacoes-web/)** | Leonardo Baraúna - Udemy | 🏆 **Concluído** (02/11/2026)<br>[Visualizar Certificado Udemy](https://www.udemy.com/certificate/UC-26a2a547-b72e-419c-9167-676510f2c1f3/) | [`jmeter_teste_de_performance_de_aplicacoes_web/`](jmeter_teste_de_performance_de_aplicacoes_web/) |
 
 ---
 
 ## 👩‍💻 Autoria
 
-Desenvolvido por **Sthefany Albuquerque Ricardo** para fins de estudo, prática e aprimoramento profissional em **Engenharia de Qualidade de Software (QA)** e **Testes de Desempenho / Carga**.
+Desenvolvido por **Sthefany Albuquerque Ricardo** para fins de estudo, prática e aprimoramento profissional em **Engenharia de Qualidade de Software (QA)** e **Testes de Performance / Desempenho / Carga**.
