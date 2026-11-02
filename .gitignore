@@ -8,4 +8,4 @@
 # JMeter logs
 jmeter.log
 *.log
-*.jlt
+*.jtl
