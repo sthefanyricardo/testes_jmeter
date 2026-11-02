@@ -49,6 +49,7 @@ testes_jmeter/
 │
 ├── jmeter_teste_de_performance_de_aplicacoes_web/
 │   ├── plans/                                         # Planos de teste (.jmx)
+│   │   ├── aula_controladores_logicos.jmx             # Organização de fluxos com Controladores Lógicos (Logic Controllers)
 │   │   ├── aula_introducao_requisicao_google.jmx      # Plano com requisição HTTP simples e amostradores
 │   │   ├── aula_parametrizacao.jmx                    # Fluxo de Login/Logout parametrizado (CSV + Cookie Manager)
 │   │   ├── aula_plano_teste_digital_toys.jmx          # Plano de teste de carga na aplicação local Digital Toys
@@ -85,6 +86,7 @@ Durante as práticas implementadas neste repositório, foram explorados os princ
 | **User Defined Variables** | Definição de variáveis globais no Plano de Teste (ex.: `${servidor}`, `${porta}`) para fácil manutenção de ambientes. |
 | **CSV Data Set Config** | Execução de testes orientados a dados (*Data-Driven Testing*), lendo massas dinâmicas de usuários e senhas de arquivos `.csv`. |
 | **Timers (Constant / Uniform Random)** | Simulação de *Think Time* (tempo de reflexão do usuário real) aplicando pausas fixas ou aleatórias entre requisições. |
+| **Logic Controllers** | Controle de fluxo de execução das requisições (ex.: *Simple Controller*, *Loop Controller*, *Once Only Controller*, *Transaction Controller*). |
 | **Response Assertion** | Validação automatizada de regras de negócio, como código de status HTTP (`200 OK`) e conteúdos esperados na resposta. |
 | **Duration Assertion** | Verificação de conformidade de SLA (ex.: requisição deve responder em menos de $X$ ms). |
 | **HTML Assertion** | Verificação da integridade sintática do código HTML retornado na resposta. |
@@ -122,7 +124,7 @@ Para abrir e executar os testes deste repositório, você precisará de:
 
 ### 0. Iniciando a Aplicação Alvo Local (Digital Toys)
 
-Os planos de teste `aula_plano_teste_digital_toys.jmx`, `aula_parametrizacao.jmx` e `aula_temporizadores.jmx` executam contra a aplicação local **Digital Toys** (`http://localhost:8080`). Para iniciá-la antes dos testes:
+Os planos de teste `aula_plano_teste_digital_toys.jmx`, `aula_parametrizacao.jmx`, `aula_temporizadores.jmx` e `aula_controladores_logicos.jmx` executam contra a aplicação local **Digital Toys** (`http://localhost:8080`). Para iniciá-la antes dos testes:
 
 ```powershell
 cd jmeter_teste_de_performance_de_aplicacoes_web/digital-toys-web-application
