@@ -59,7 +59,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Consulta Produto Simple Controller" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Consulta Produto Simple Controller"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consultar produto 1">
             <stringProp name="HTTPSampler.domain">localhost</stringProp>
@@ -334,7 +334,7 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Consulta Produto Runtime Controller">
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Consulta Produto Runtime Controller" enabled="false">
           <stringProp name="RunTime.seconds">10</stringProp>
         </RunTime>
         <hashTree>
