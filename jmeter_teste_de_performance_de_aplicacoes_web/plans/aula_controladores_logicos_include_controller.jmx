@@ -20,7 +20,9 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller"/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller">
+          <stringProp name="IncludeController.includepath">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\plans\login_digital_toys_application_fragment.jmx</stringProp>
+        </IncludeController>
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Consulta Produto Simple Controller" enabled="false"/>
         <hashTree>
