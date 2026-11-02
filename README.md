@@ -34,23 +34,20 @@ Os cenários cobrem desde requisições HTTP básicas até configurações avan�
 ```text
 testes_jmeter/
 ├── aprenda_jmeter_em_1_hora_iniciante/
-│   ├── dashboard_report_table/            # Relatório HTML gerado para a visualização em tabela
-│   │   ├── index.html                     # Dashboard visual completo
-│   │   └── statistics.json                # Métricas consolidadas em JSON
-│   ├── dashboards_report_tree/            # Relatório HTML gerado para a visualização em árvore
-│   ├── Materiais Curso JMeter/            # Arquivos complementares de estudo e apoio
-│   │   ├── gitgithub.csv                  # Massa de dados para testes parametrizados (Data-Driven)
-│   │   ├── gravacao-git.jmx               # Script gravado via HTTP(S) Test Script Recorder
-│   │   ├── Test-plan.jmx                  # Plano de teste inicial
-│   │   ├── test-plan-1.jmx                # Plano de teste com melhorias de assertions e listeners
-│   │   ├── results-listeners-table-1.csv  # Log de resultados em formato CSV
-│   │   └── testando-linha-de-comando.csv  # Resultados de execução via CLI
-│   ├── report-html.txt                    # Saída da asserção de estrutura HTML (HTML Assertion)
-│   ├── resultados-arvore.jtl              # Log de resultados gerado pelo View Results Tree
-│   ├── resultados-graph.jtl               # Log de resultados gerado pelo Graph Results
-│   ├── resultados-report.jtl              # Log de resultados gerado pelo Summary Report
-│   ├── resultados-tabela.jtl              # Log de resultados gerado pelo View Results in Table
-│   └── testes_curso_rapido_jmeter.jmx     # Plano de teste principal do curso para iniciantes
+│   ├── plans/                                         # Planos de teste (.jmx)
+│   │   └── testes_curso_rapido_jmeter.jmx             # Plano de teste principal do curso para iniciantes
+│   ├── data/                                          # Massa de dados (.csv)
+│   │   └── gitgithub.csv                              # Massa de dados para testes parametrizados (Data-Driven)
+│   ├── results/                                       # Logs brutos de resultados (.jtl / .txt)
+│   │   ├── report-html.txt                            # Saída da asserção de estrutura HTML (HTML Assertion)
+│   │   ├── resultados-arvore.jtl                      # Log de resultados gerado pelo View Results Tree
+│   │   ├── resultados-graph.jtl                       # Log de resultados gerado pelo Graph Results
+│   │   ├── resultados-report.jtl                      # Log de resultados gerado pelo Summary Report
+│   │   └── resultados-tabela.jtl                      # Log de resultados gerado pelo View Results in Table
+│   ├── reports/                                       # Dashboards HTML gerados
+│   │   ├── dashboard_report_table/                    # Relatório HTML gerado para a visualização em tabela
+│   │   └── dashboards_report_tree/                    # Relatório HTML gerado para a visualização em árvore
+│   └── Materiais Curso JMeter/                        # Arquivos originais de apoio do curso
 │
 ├── jmeter_teste_de_performance_de_aplicacoes_web/
 │   ├── plans/                                         # Planos de teste (.jmx)
@@ -141,7 +138,7 @@ Para abrir e executar os testes deste repositório, você precisará de:
 5. No menu superior do JMeter, vá em **File > Open** (`Ctrl + O`).
 6. Navegue até o workspace e selecione o plano de teste desejado:
    - Exemplo 1: `jmeter_teste_de_performance_de_aplicacoes_web/plans/exemplo_1_requisicao_google.jmx`
-   - Exemplo 2: `aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx`
+   - Exemplo 2: `aprenda_jmeter_em_1_hora_iniciante/plans/testes_curso_rapido_jmeter.jmx`
 7. Clique no botão verde de **Play** (ou pressione `Ctrl + R`) para iniciar.
 8. Acompanhe os resultados nos ouvintes configurados (**View Results Tree**, **View Results in Table**, etc.).
 
@@ -159,10 +156,10 @@ Para simulações de carga reais e coletas de métricas precisas, execute o JMet
 
 ```bash
 # Se o JMeter estiver no PATH:
-jmeter -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado_execucao.jtl"
+jmeter -n -t "aprenda_jmeter_em_1_hora_iniciante/plans/testes_curso_rapido_jmeter.jmx" -l "aprenda_jmeter_em_1_hora_iniciante/results/resultado_execucao.jtl"
 
 # Ou utilizando o caminho absoluto do .bat:
-"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado_execucao.jtl"
+"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -n -t "aprenda_jmeter_em_1_hora_iniciante/plans/testes_curso_rapido_jmeter.jmx" -l "aprenda_jmeter_em_1_hora_iniciante/results/resultado_execucao.jtl"
 ```
 
 **Parâmetros utilizados:**
@@ -178,16 +175,16 @@ O JMeter pode gerar automaticamente um dashboard interativo completo (com gráfi
 
 #### A) Executar o teste e gerar o relatório ao mesmo tempo:
 ```bash
-jmeter -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado.jtl" -e -o "dashboard_output"
+jmeter -n -t "aprenda_jmeter_em_1_hora_iniciante/plans/testes_curso_rapido_jmeter.jmx" -l "aprenda_jmeter_em_1_hora_iniciante/results/resultado.jtl" -e -o "aprenda_jmeter_em_1_hora_iniciante/reports/dashboard_output"
 # Ou:
-"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -n -t "aprenda_jmeter_em_1_hora_iniciante/testes_curso_rapido_jmeter.jmx" -l "resultado.jtl" -e -o "dashboard_output"
+"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -n -t "aprenda_jmeter_em_1_hora_iniciante/plans/testes_curso_rapido_jmeter.jmx" -l "aprenda_jmeter_em_1_hora_iniciante/results/resultado.jtl" -e -o "aprenda_jmeter_em_1_hora_iniciante/reports/dashboard_output"
 ```
 
 #### B) Gerar o relatório a partir de um arquivo `.jtl` já existente:
 ```bash
-jmeter -g "aprenda_jmeter_em_1_hora_iniciante/resultados-tabela.jtl" -o "aprenda_jmeter_em_1_hora_iniciante/meu_novo_dashboard"
+jmeter -g "aprenda_jmeter_em_1_hora_iniciante/results/resultados-tabela.jtl" -o "aprenda_jmeter_em_1_hora_iniciante/reports/meu_novo_dashboard"
 # Ou:
-"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -g "aprenda_jmeter_em_1_hora_iniciante/resultados-tabela.jtl" -o "aprenda_jmeter_em_1_hora_iniciante/meu_novo_dashboard"
+"C:\apache-jmeter-5.6.3\bin\jmeter.bat" -g "aprenda_jmeter_em_1_hora_iniciante/results/resultados-tabela.jtl" -o "aprenda_jmeter_em_1_hora_iniciante/reports/meu_novo_dashboard"
 ```
 
 Após o término, basta abrir o arquivo `index.html` gerado na pasta de saída em qualquer navegador web.
