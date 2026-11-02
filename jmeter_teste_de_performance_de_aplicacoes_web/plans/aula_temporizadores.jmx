@@ -111,7 +111,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\resultado-arvore-aula-paremetrizacao.jtl</stringProp>
+          <stringProp name="filename">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\results\resultado-arvore-aula-parametrizacao.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
@@ -151,13 +151,13 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\resultado-tabela-aula-paremetrizacao.jtl</stringProp>
+          <stringProp name="filename">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\results\resultado-tabela-aula-parametrizacao.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="delimiter">;</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">C:/Workspace/testes_jmeter/jmeter_teste_de_performance_de_aplicacoes_web/dados_login_digital_toys.csv</stringProp>
+          <stringProp name="filename">../data/dados_login_digital_toys.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
