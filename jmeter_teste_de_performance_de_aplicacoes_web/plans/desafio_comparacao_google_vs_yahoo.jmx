@@ -97,7 +97,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\resultado-agregado-desafio-google-yahoo.jtl</stringProp>
+          <stringProp name="filename">C:\Workspace\testes_jmeter\jmeter_teste_de_performance_de_aplicacoes_web\results\resultado-agregado-desafio-google-yahoo.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
