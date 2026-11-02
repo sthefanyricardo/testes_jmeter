@@ -209,7 +209,7 @@ Para executar o plano `jmeter_teste_de_performance_de_aplicacoes_web/plans/aula_
 ### Erro `EXCEPTION_ACCESS_VIOLATION (sigar-amd64-winnt.dll)` no ServerAgent / Windows 11
 
 #### Problema apresentado
-Ao iniciar a coleta de métricas no JMeter 5.6.3 com o **PerfMon Metrics Collector** e o **ServerAgent 2.2.3** no Windows 11 (64 bits), o ServerAgent encerra inesperadamente com o erro:
+Ao iniciar a coleta de métricas no JMeter 5.6.3 com o **PerfMon Metrics Collector** e o **ServerAgent 2.2.3** no Windows 11 (64 bits), o ServerAgent encerrava inesperadamente com a seguinte falha registrada no arquivo de log `hs_err_pid`:
 
 ```text
 # A fatal error has been detected by the Java Runtime Environment:
@@ -218,17 +218,19 @@ Ao iniciar a coleta de métricas no JMeter 5.6.3 com o **PerfMon Metrics Collect
 #   C  [sigar-amd64-winnt.dll+0x14ed4]
 ```
 
-Consequentemente, o JMeter permanece com a mensagem `Waiting for samples...` e registra `java.net.SocketException: Connection reset by peer` ao final do teste. Isso ocorre porque a biblioteca nativa `sigar-amd64-winnt.dll` original truncava ponteiros de memória de 64 bits em sistemas Windows modernos com *High-Entropy ASLR*.
+O log comprova que a falha ocorre dentro da biblioteca nativa `sigar-amd64-winnt.dll` durante a chamada aos métodos nativos do SIGAR para coleta de métricas da máquina, interrompendo o processo do ServerAgent e gerando `java.net.SocketException: Connection reset by peer` no JMeter. Na comunidade, essa incompatibilidade em ambientes Windows 64 bits modernos é atribuída à implementação legada da biblioteca SIGAR (relacionada à manipulação de ponteiros de memória de 64 bits no código nativo).
 
-#### Solução aplicada
+#### Solução alternativa validada no ambiente local
 1. Acesse a pasta `C:\apache-jmeter-5.6.3\ServerAgent-2.2.3\lib`.
 2. Faça um backup da DLL original, renomeando-a para `backup-sigar-amd64-winnt.dll`.
-3. Baixe a versão corrigida para 64 bits da biblioteca `sigar-amd64-winnt.dll`:
+3. Substitua a DLL original por uma versão recompilada pela comunidade para ambientes Windows 64 bits:
    - Repositório de referência: [https://github.com/cnstar9988/sigar/blob/master/sigar-amd64-winnt.dll](https://github.com/cnstar9988/sigar/blob/master/sigar-amd64-winnt.dll)
-4. Coloque o arquivo baixado dentro de `ServerAgent-2.2.3\lib` mantendo o nome **`sigar-amd64-winnt.dll`**.
+4. Mantenha o nome do arquivo substituído como **`sigar-amd64-winnt.dll`** dentro de `ServerAgent-2.2.3\lib`.
 5. Reinicie o ServerAgent executando `startAgent.bat`.
 
-Após a substituição, o ServerAgent permanece estável e envia normalmente as métricas de **CPU**, **Memory**, **Disks I/O** e **Network I/O** para o gráfico do JMeter.
+Após a substituição, o ServerAgent iniciou normalmente e o **PerfMon Metrics Collector** passou a exibir as métricas de **CPU**, **Memory**, **Disks I/O** e **Network I/O** no JMeter.
+
+> **Observação:** Trata-se de uma solução alternativa (*workaround*) da comunidade validada neste ambiente de estudos (Windows 11 64 bits + OpenJDK 8), e não de um *patch* oficial do projeto original. Recomenda-se sempre manter o backup da DLL original antes da substituição.
 
 ---
 
