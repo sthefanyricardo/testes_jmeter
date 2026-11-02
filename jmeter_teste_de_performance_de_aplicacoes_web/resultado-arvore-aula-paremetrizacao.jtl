@@ -1,37 +1,61 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Filename,Latency,Encoding,SampleCount,ErrorCount,Hostname,IdleTime,Connect
-1792954629494,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6372,129,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629501,20,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,18068,461,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629521,11,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,17386,342,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629575,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-2,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629582,18,HTTP Request - Login Form,200,OK,Thread Group 1-2,text,true,,18068,459,1,1,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629600,10,HTTP Request - Logout,200,OK,Thread Group 1-2,text,true,,17385,340,1,1,http://localhost:8080/,,1,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629660,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-3,text,true,,6370,129,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629667,15,HTTP Request - Login Form,200,OK,Thread Group 1-3,text,true,,18068,457,1,1,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629682,11,HTTP Request - Logout,200,OK,Thread Group 1-3,text,true,,17384,338,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629742,7,HTTP Request - Tela de Login,200,OK,Thread Group 1-4,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,7,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629749,18,HTTP Request - Login Form,200,OK,Thread Group 1-4,text,true,,18068,459,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629768,10,HTTP Request - Logout,200,OK,Thread Group 1-4,text,true,,17385,340,1,1,http://localhost:8080/,,1,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629824,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-5,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,5,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629830,16,HTTP Request - Login Form,200,OK,Thread Group 1-5,text,true,,18068,459,1,1,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629846,9,HTTP Request - Logout,200,OK,Thread Group 1-5,text,true,,17385,340,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629909,7,HTTP Request - Tela de Login,200,OK,Thread Group 1-6,text,true,,6372,129,1,1,http://localhost:8080/user/signIn,,7,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629917,17,HTTP Request - Login Form,200,OK,Thread Group 1-6,text,true,,18068,461,1,1,http://localhost:8080/,,7,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629934,8,HTTP Request - Logout,200,OK,Thread Group 1-6,text,true,,17385,342,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
-1792954629991,5,HTTP Request - Tela de Login,200,OK,Thread Group 1-7,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,5,utf-8,1,0,jelly-athom-A-R,0,1
-1792954629996,17,HTTP Request - Login Form,200,OK,Thread Group 1-7,text,true,,18068,459,1,1,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630014,11,HTTP Request - Logout,200,OK,Thread Group 1-7,text,true,,17386,340,1,1,http://localhost:8080/,,1,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630075,7,HTTP Request - Tela de Login,200,OK,Thread Group 1-8,text,true,,6370,129,1,1,http://localhost:8080/user/signIn,,7,utf-8,1,0,jelly-athom-A-R,0,1
-1792954630082,18,HTTP Request - Login Form,200,OK,Thread Group 1-8,text,true,,18068,457,1,1,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630100,10,HTTP Request - Logout,200,OK,Thread Group 1-8,text,true,,17385,338,1,1,http://localhost:8080/,,1,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630157,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-9,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,1
-1792954630163,18,HTTP Request - Login Form,200,OK,Thread Group 1-9,text,true,,18068,459,1,1,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630181,10,HTTP Request - Logout,200,OK,Thread Group 1-9,text,true,,17386,340,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630240,5,HTTP Request - Tela de Login,200,OK,Thread Group 1-10,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,5,utf-8,1,0,jelly-athom-A-R,0,1
-1792954630246,15,HTTP Request - Login Form,200,OK,Thread Group 1-10,text,true,,18069,461,1,1,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630261,8,HTTP Request - Logout,200,OK,Thread Group 1-10,text,true,,17384,340,1,1,http://localhost:8080/,,1,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630324,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-11,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,1
-1792954630330,16,HTTP Request - Login Form,200,OK,Thread Group 1-11,text,true,,18069,461,1,1,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630346,8,HTTP Request - Logout,200,OK,Thread Group 1-11,text,true,,17384,340,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630406,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-12,text,true,,6372,129,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,2
-1792954630413,15,HTTP Request - Login Form,200,OK,Thread Group 1-12,text,true,,18069,463,1,1,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
-1792954630428,8,HTTP Request - Logout,200,OK,Thread Group 1-12,text,true,,17385,342,1,1,http://localhost:8080/,,1,utf-8,1,0,jelly-athom-A-R,0,0
+1793587899058,51,HTTP Request - Tela de Login,200,OK,Thread Group 1-3,text,true,,6371,129,12,12,http://localhost:8080/user/signIn,,50,utf-8,1,0,jelly-athom-A-R,0,1
+1793587898974,135,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6372,129,12,12,http://localhost:8080/user/signIn,,134,utf-8,1,0,jelly-athom-A-R,0,81
+1793587898976,133,HTTP Request - Tela de Login,200,OK,Thread Group 1-2,text,true,,6372,129,12,12,http://localhost:8080/user/signIn,,132,utf-8,1,0,jelly-athom-A-R,0,79
+1793587899141,13,HTTP Request - Tela de Login,200,OK,Thread Group 1-4,text,true,,6372,129,12,12,http://localhost:8080/user/signIn,,13,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899222,12,HTTP Request - Tela de Login,200,OK,Thread Group 1-5,text,true,,6370,129,12,12,http://localhost:8080/user/signIn,,12,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899305,14,HTTP Request - Tela de Login,200,OK,Thread Group 1-6,text,true,,6370,129,12,12,http://localhost:8080/user/signIn,,14,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899388,12,HTTP Request - Tela de Login,200,OK,Thread Group 1-7,text,true,,6372,129,12,12,http://localhost:8080/user/signIn,,12,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899471,11,HTTP Request - Tela de Login,200,OK,Thread Group 1-8,text,true,,6372,129,12,12,http://localhost:8080/user/signIn,,10,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899553,10,HTTP Request - Tela de Login,200,OK,Thread Group 1-9,text,true,,6371,129,12,12,http://localhost:8080/user/signIn,,10,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899636,9,HTTP Request - Tela de Login,200,OK,Thread Group 1-10,text,true,,6372,129,12,12,http://localhost:8080/user/signIn,,9,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899718,11,HTTP Request - Tela de Login,200,OK,Thread Group 1-11,text,true,,6371,129,12,12,http://localhost:8080/user/signIn,,11,utf-8,1,0,jelly-athom-A-R,0,1
+1793587899802,9,HTTP Request - Tela de Login,200,OK,Thread Group 1-12,text,true,,6370,129,12,12,http://localhost:8080/user/signIn,,9,utf-8,1,0,jelly-athom-A-R,0,1
+1793587901112,137,HTTP Request - Login Form,200,OK,Thread Group 1-3,text,true,,21014,459,12,12,http://localhost:8080/,,70,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901156,93,HTTP Request - Login Form,200,OK,Thread Group 1-4,text,true,,21014,461,12,12,http://localhost:8080/,,26,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901112,137,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,461,12,12,http://localhost:8080/,,70,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901112,139,HTTP Request - Login Form,200,OK,Thread Group 1-2,text,true,,21014,461,12,12,http://localhost:8080/,,70,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901236,45,HTTP Request - Login Form,200,OK,Thread Group 1-5,text,true,,21014,457,12,12,http://localhost:8080/,,15,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901321,31,HTTP Request - Login Form,200,OK,Thread Group 1-6,text,true,,21014,457,12,12,http://localhost:8080/,,7,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901401,30,HTTP Request - Login Form,200,OK,Thread Group 1-7,text,true,,21014,461,12,12,http://localhost:8080/,,7,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901483,27,HTTP Request - Login Form,200,OK,Thread Group 1-8,text,true,,21014,461,12,12,http://localhost:8080/,,7,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901564,29,HTTP Request - Login Form,200,OK,Thread Group 1-9,text,true,,21014,459,12,12,http://localhost:8080/,,7,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901648,26,HTTP Request - Login Form,200,OK,Thread Group 1-10,text,true,,21015,463,12,12,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901731,22,HTTP Request - Login Form,200,OK,Thread Group 1-11,text,true,,21015,461,12,12,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
+1793587901813,22,HTTP Request - Login Form,200,OK,Thread Group 1-12,text,true,,21015,459,12,12,http://localhost:8080/,,7,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903251,19,HTTP Request - Logout,200,OK,Thread Group 1-4,text,true,,20331,342,12,12,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903251,21,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20331,342,12,12,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903252,21,HTTP Request - Logout,200,OK,Thread Group 1-2,text,true,,20330,342,12,12,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903251,24,HTTP Request - Logout,200,OK,Thread Group 1-3,text,true,,20331,340,9,9,http://localhost:8080/,,4,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903289,17,HTTP Request - Logout,200,OK,Thread Group 1-5,text,true,,20331,338,8,8,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903353,19,HTTP Request - Logout,200,OK,Thread Group 1-6,text,true,,20332,338,7,7,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903432,18,HTTP Request - Logout,200,OK,Thread Group 1-7,text,true,,20331,342,6,6,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903513,21,HTTP Request - Logout,200,OK,Thread Group 1-8,text,true,,20332,342,5,5,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903595,14,HTTP Request - Logout,200,OK,Thread Group 1-9,text,true,,20331,340,4,4,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903675,13,HTTP Request - Logout,200,OK,Thread Group 1-10,text,true,,20330,342,3,3,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903768,14,HTTP Request - Logout,200,OK,Thread Group 1-11,text,true,,20330,340,2,2,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793587903846,15,HTTP Request - Logout,200,OK,Thread Group 1-12,text,true,,20330,338,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793588119356,7,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,7,utf-8,1,0,jelly-athom-A-R,0,1
+1793588121837,22,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,459,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588122221,12,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20332,340,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793588122431,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6274,176,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588123613,18,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,461,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588125142,11,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20330,342,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793588126513,5,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6274,174,1,1,http://localhost:8080/user/signIn,,5,utf-8,1,0,jelly-athom-A-R,0,0
+1793588127294,17,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,457,1,1,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
+1793588128504,11,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20331,338,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793588129435,8,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6274,175,1,1,http://localhost:8080/user/signIn,,8,utf-8,1,0,jelly-athom-A-R,0,0
+1793588131506,18,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,459,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588134034,12,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20332,340,1,1,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793588166351,8,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6371,129,1,1,http://localhost:8080/user/signIn,,8,utf-8,1,0,jelly-athom-A-R,0,1
+1793588168361,20,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,459,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588170381,12,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20330,340,1,1,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793588172395,7,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6274,174,1,1,http://localhost:8080/user/signIn,,7,utf-8,1,0,jelly-athom-A-R,0,0
+1793588174403,21,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,457,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588176425,12,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20331,338,1,1,http://localhost:8080/,,3,utf-8,1,0,jelly-athom-A-R,0,0
+1793588178440,6,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6274,175,1,1,http://localhost:8080/user/signIn,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588180448,18,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,459,1,1,http://localhost:8080/,,5,utf-8,1,0,jelly-athom-A-R,0,0
+1793588182467,10,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20332,340,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
+1793588184479,5,HTTP Request - Tela de Login,200,OK,Thread Group 1-1,text,true,,6274,176,1,1,http://localhost:8080/user/signIn,,5,utf-8,1,0,jelly-athom-A-R,0,0
+1793588186498,19,HTTP Request - Login Form,200,OK,Thread Group 1-1,text,true,,21014,461,1,1,http://localhost:8080/,,6,utf-8,1,0,jelly-athom-A-R,0,0
+1793588188525,11,HTTP Request - Logout,200,OK,Thread Group 1-1,text,true,,20330,342,1,1,http://localhost:8080/,,2,utf-8,1,0,jelly-athom-A-R,0,0
