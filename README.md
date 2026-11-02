@@ -49,11 +49,11 @@ testes_jmeter/
 │
 ├── jmeter_teste_de_performance_de_aplicacoes_web/
 │   ├── plans/                                         # Planos de teste (.jmx)
+│   │   ├── aula_introducao_requisicao_google.jmx      # Plano com requisição HTTP simples e amostradores
 │   │   ├── aula_parametrizacao.jmx                    # Fluxo de Login/Logout parametrizado (CSV + Cookie Manager)
+│   │   ├── aula_plano_teste_digital_toys.jmx          # Plano de teste de carga na aplicação local Digital Toys
 │   │   ├── aula_temporizadores.jmx                    # Simulação de Think Time (Constant & Uniform Random Timer)
-│   │   ├── desafio_comparacao_google_vs_yahoo.jmx     # Desafio: 200 usuários comparando Google e Yahoo (90% Line)
-│   │   ├── digital_toys_1.jmx                         # Plano de teste de carga na aplicação local Digital Toys
-│   │   └── exemplo_1_requisicao_google.jmx            # Plano com requisição HTTP simples e amostradores
+│   │   └── desafio_comparacao_google_vs_yahoo.jmx     # Desafio: 200 usuários comparando Google e Yahoo (90% Line)
 │   ├── data/                                          # Massa de dados (.csv)
 │   │   └── dados_login_digital_toys.csv               # Credenciais para login parametrizado na Digital Toys
 │   ├── results/                                       # Logs brutos de execução (.jtl) — ignorados no Git
@@ -122,7 +122,7 @@ Para abrir e executar os testes deste repositório, você precisará de:
 
 ### 0. Iniciando a Aplicação Alvo Local (Digital Toys)
 
-Os planos de teste `digital_toys_1.jmx`, `aula_parametrizacao.jmx` e `aula_temporizadores.jmx` executam contra a aplicação local **Digital Toys** (`http://localhost:8080`). Para iniciá-la antes dos testes:
+Os planos de teste `aula_plano_teste_digital_toys.jmx`, `aula_parametrizacao.jmx` e `aula_temporizadores.jmx` executam contra a aplicação local **Digital Toys** (`http://localhost:8080`). Para iniciá-la antes dos testes:
 
 ```powershell
 cd jmeter_teste_de_performance_de_aplicacoes_web/digital-toys-web-application
@@ -148,7 +148,7 @@ cd jmeter_teste_de_performance_de_aplicacoes_web/digital-toys-web-application
 4. Logo em seguida, a interface gráfica do JMeter (5.6.3) será aberta.
 5. No menu superior do JMeter, vá em **File > Open** (`Ctrl + O`).
 6. Navegue até o workspace e selecione o plano de teste desejado:
-   - Exemplo 1: `jmeter_teste_de_performance_de_aplicacoes_web/plans/exemplo_1_requisicao_google.jmx`
+   - Exemplo 1: `jmeter_teste_de_performance_de_aplicacoes_web/plans/aula_introducao_requisicao_google.jmx`
    - Exemplo 2: `aprenda_jmeter_em_1_hora_iniciante/plans/testes_curso_rapido_jmeter.jmx`
 7. Clique no botão verde de **Play** (ou pressione `Ctrl + R`) para iniciar.
 8. Acompanhe os resultados nos ouvintes configurados (**View Results Tree**, **View Results in Table**, etc.).
